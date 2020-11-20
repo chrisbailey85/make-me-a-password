@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/3b0c3d4018.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Make Me A Password</title>
+  </head>
+  <body>
+    <div class="contanter">
+      <h1>Make Me A Password</h1>
+      <p>
+        This password generator will generate a password containing capital and
+        lowercase letters, numbers between 0 - 9 and any of these symbols + * &lt;
+         &gt; ? @ } { ) ( & ^ % $ £ !. All you need to do is enter a number for the
+        length that you want password to be, and if you want to exclude any
+        letters or symbols enter to them in the exclude letters. Then just hit
+        the generate password.
+      </p>
+      <form action="#">
+        <label for="number">
+          <h3>Password Length:</h3>
+          <input type="number" name="number" id="number" />
+        </label>
+        <label for="text">
+          <h3>Exclude:</h3>
+          <input type="text" name="text" id="regex" />
+        </label>
+        <div>
+            <button type="submit">Generate Password</button>
+        </div>
+      </form>
+      <h2 class="password"></h2>
+    </div>
+     <footer>
+        <p>
+          Made by Chris Bailey
+          <a href="https://twitter.com/bailey_coding"
+            ><i class="fab fa-twitter-square icon"></i
+          ></a>
+        </p>
+      </footer>
+    <script src="./password.js"></script>
+  </body>
+</html>
